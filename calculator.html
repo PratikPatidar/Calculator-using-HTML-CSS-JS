@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calaculator
+    </title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!-- Link Externel CSS file  -->
+    <link rel="Stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <!-- Display answer -->
+            <div class="input" id="input"></div>
+            <div class="leftPanel">
+                <div class="topbar">
+                    <!-- All clear button -->
+                    <div class="count" id="clear" onclick="pressAllClear()">AC</div>
+                    <!-- Equal button -->
+                    <div class="equal" id="result" onclick="pressEqual()">=</div>
+                    <!-- Baclspace button -->
+                    <div class="backspace">
+                        <button onclick="pressClear()"><i class="fas fa-backspace"> </i></button>
+                    </div>
+
+                </div>
+                <!-- All Numbers and Operators -->
+                <div class="number">
+                    <div class="count" onclick="pressNum(this)">7</div>
+                    <div class="count" onclick="pressNum(this)">8</div>
+                    <div class="count" onclick="pressNum(this)">9</div>
+                    <div class="count" id="operators">
+                        <div onclick="pressOperator(this)">+</div>
+                    </div>
+                    <div class="count" onclick="pressNum(this)">4</div>
+                    <div class="count" onclick="pressNum(this)">5</div>
+                    <div class="count" onclick="pressNum(this)">6</div>
+                    <div class="count" id="operators">
+                        <div onclick="pressOperator(this)">-</div>
+                    </div>
+                    <div class="count" onclick="pressNum(this)">1</div>
+                    <div class="count" onclick="pressNum(this)">2</div>
+                    <div class="count" onclick="pressNum(this)">3</div>
+                    <div class=" count" id="operators">
+                        <div onclick="pressOperator(this)">&times;
+                            <!-- multiply sign -->
+                        </div>
+                    </div>
+                    <div class="count" onclick="pressNum(this)">0</div>
+                    <div class="count" onclick="pressNum(this)">00</div>
+                    <div class="count" onclick="pressDot()">.</div>
+                    <div class=" count " id="operators">
+                        <div onclick="pressOperator(this)">&divide;
+                            <!--divide sign -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Link Externel Java Script file  -->
+    <script src="indexx.js"></script>
+</body>
+
+</html>
